@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Question 8</title>
+
+    <style>
+        button{
+            height: 40px;
+            width: 150px;
+            background-color: blanchedalmond;
+            border: 2px solid green;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy -->
+    <h3 id="content">Hello Shruthi Barby !!</h3> 
+    <br>
+    <button id="button">Replace Text</button>
+
+    <script>
+        let button= document.getElementById("button");
+        button.addEventListener("click", function()
+        {
+            let body = document.getElementById("content");
+            body.innerText="Welcome to Elevation Academy Shruthi.!!";
+        })
+    </script>
+
+</body>
+</html>

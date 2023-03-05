@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript DOM</title>
+    
+</head>
+<body>
+
+<fieldset>
+    <legend>Question 1</legend>
+    Write the code to access element which is having id as "text"
+</fieldset>
+<div id="text">
+    <h1>This is my DOM Hands-on</h1>
+    <p>This is all about a paragraph inside my DOM hands-on... With id "text"</p>
+</div>
+
+
+<fieldset>
+    <legend>Question 2</legend> Write the code to access element which is having tag as "h1"</fieldset>
+<div>
+<h1>HELLO GET ELEMENTS BY TAG</h1>
+<h1>Hello, Second H1 tag</h1>
+</div>
+
+<fieldset>
+    <legend>Question 3</legend>
+    Write the code to access element which is having class as "box"
+</fieldset>
+<div class="box">
+    <div class="box">
+        <h1 class="box">H1</h1>
+    </div>
+    <div class="box">
+        <h2 class="box">H2</h2>
+    </div>
+    <div class="box">
+        <h3 class="box">H3
+        </h3>
+    </div>
+</div>
+
+<fieldset>
+    <legend>Question 4</legend>
+    <pre><h1 id="faltu">Hello </h1>
+
+Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</pre>
+</fieldset>
+
+<fieldset>
+    <legend>Question 5</legend>
+    Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.
+</fieldset>
+
+<div id="five">
+    <div class="cards cards1"></div>
+    <div class="cards cards2"></div>
+    <div class="cards cards3"></div>
+</div>
+
+<button id="buttons1"> Magic 1</button>
+<button id="buttons2"> Magic 2 </button>
+
+<fieldset>
+    <legend>Question 6</legend>
+    What’s the difference between window vs document?
+</fieldset>
+<fieldset>
+    <legend>Answer</legend>
+    <pre>
+        The document object represent a web page that is loaded in the browser. 
+        By accessing the document object, we can access the element in the HTML page. 
+        With the help of document objects, we can add dynamic content to our web page. 
+        The document object can be accessed with a window.document or just document.
+
+        Syntax:
+
+        document.property_name;
+
+        Window Object: The window object is the topmost object of the DOM hierarchy. 
+        It represents a browser window or frame that displays the contents of the webpage. 
+        Whenever a window appears on the screen to display the contents of the document, the window object is created. 
+
+        Syntax:
+
+        window.property_name;
+    </pre>
+</fieldset>
+
+<fieldset>
+    <legend>Question 7</legend>
+    <h1>Hello</h1>
+
+    Add one style attribute and give text color as red and id attribute and give the id value as "heading" in the above given h1 tag using DOM functions
+</fieldset>
+<fieldset>
+    <legend>Solution</legend>
+    <pre>
+        let h1s=document.getElementsByTagName("h1");
+        console.log(h1s);
+        
+        //as my document has more than one h1 tags, 
+        I need to find out the position of this particular h1 which is at index 5
+
+        h1s[5].style.color="red";
+        h1s[5].style.fontWeight="bold";
+        h1s[5].style.fontSize="30px";
+        h1s[5].setAttribute("id", "heading");
+        console.log(h1s[5]); //to see id
+
+
+        <h3>output of console</h3>
+        h1 id="heading" style="color: red; font-weight: bold; font-size: 30px;"
+    </pre>
+</fieldset>
+
+<fieldset>
+    <legend>Question 8</legend>
+    Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"
+</fieldset>
+<fieldset>
+    <legend>Soultion</legend>
+    <a href="question8.html" target="_blank">Click here to go to the Solution</a>
+</fieldset>
+<fieldset>
+    <legend>Question 9</legend>
+    Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second
+</fieldset>
+<fieldset>
+    <legend>Soultion</legend>
+    <!-- <a href="question8.html" target="_blank">Click here to go to the Solution</a> -->
+    <span id="hrs"></span> <strong>:</strong>
+    <span id="mins"></span> <strong>:</strong>
+    <span id="secs"></span>
+</fieldset>
+
+<fieldset>
+    <legend>Question 10</legend>
+    Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected
+</fieldset>
+<fieldset>
+    <legend>Solution</legend>
+    <div class="select">
+        <select name="year" id="year">
+            <option value="0">2020-21</option>
+            <option value="1">2021-22</option>
+            <option value="2">2022-23</option>
+            <option value="3">2023-24</option>
+            <option value="4">2024-25</option>
+        </select>
+        <button id="buttonPrint">Print</button>
+    </div>
+</fieldset>
+
+<script src="./JS/index.js"></script>
+</body>
+</html>
